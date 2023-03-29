@@ -1,0 +1,14 @@
+header{
+    background-color: crimson;
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;}
+header img{
+    height: 150px;}
+header #nom
+    {float: left;}
+header #logo{
+    float: right;}
+#compet img{
+height: 50px;
+}
