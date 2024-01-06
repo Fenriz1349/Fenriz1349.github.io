@@ -1,0 +1,56 @@
+*{margin: 0;
+padding: 0;
+}
+/* style du header, centrage du titre, image de profil à droite */
+header{
+    margin-left: 5px;
+    background-color: crimson;
+    border-radius: 25px;
+    text-align: center;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    position:sticky;
+    height: 20vh;
+    min-height: 150px;
+    }
+.logo{
+        grid-column-start: 1;
+        text-align: left;
+    }
+header img{
+        width: 150px;
+    }
+    .titre{
+        grid-column-start: 2;
+    }
+/* style de la partie profil et contact */
+.main{
+margin: 10px;
+display: flex;
+flex-direction: column;
+height: 80vh;
+overflow-y: scroll;
+}
+
+.enTete{
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+.profil{
+    max-width: 200vh;
+}
+/* style de la partie pro, competences et diplomes */
+.experiencePro{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.competences img{
+    width: 50px;
+}
+.formation{
+    display: flex;
+    flex-direction: column;
+}
