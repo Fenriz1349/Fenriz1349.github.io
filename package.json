@@ -9,14 +9,10 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/OpenClassrooms-Student-Center/7697016-Front-End.1.git"
+      "url": "https://github.com/Fenriz1349/CV.git"
     },
-    "author": "OpenClassrooms",
+    "author": "Cotte Julien",
     "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/OpenClassrooms-Student-Center/7697016-Front-End.1/issues"
-    },
-    "homepage": "https://github.com/OpenClassrooms-Student-Center/7697016-Front-End.1#readme",
     "dependencies": {
       "http-server": "^14.1.1"
     }

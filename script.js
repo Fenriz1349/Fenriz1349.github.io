@@ -1,5 +1,8 @@
 //recuperation des données depuis le fichier data
-const data = require("./data.json");
+
+
+const reponse = await fetch('data.json');
+const data = await reponse.json();
 console.log(data)
 //const data =  reponse.json();
 function age(){
