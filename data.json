@@ -1,14 +1,207 @@
 {
-    "informations":[
-        {"dateNaissance": "February 24, 1988 02:00:00"}
-    ],
-    "competences":[
-
-    ],
-    "diplomes":[
-
-    ],
-    "experiences":[
-
-    ]
+    "francais":
+        {"titreCompetence": "Compétences Informatiques",
+        "titreFormation": "Formations",
+        "titreExperience":"Emplois",
+        "poste":"Developpeur / Data Analyst Junior",
+        "competences":[
+            {"nom":"Python",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"Java",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"Kotlin",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"SQL",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"HTML5 et CSS3",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"Javascript",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"React",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"API Rest",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"Git et Github",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            },
+            {"nom":"Power Bi",
+            "logo":"",
+            "certification":true,
+            "lienCertif":""
+            }
+        ],
+        "formations":[
+            {"nom":"MS Data Analyst",
+            "centre":"Greta",
+            "annee":"2023",
+            "adresse":"Lille"
+            },
+            {"nom":"La Nurserie Numerique",
+            "centre":"M2I/AFPA",
+            "annee":"2023",
+            "adresse":"Lille"
+            },
+            {"nom":"CAP Boucher",
+            "centre":"Campus pro",
+            "annee":"2014",
+            "adresse":""
+            },
+            {"nom":"TP Transport Routier",
+            "centre":"ASSIFEP",
+            "annee":"2011",
+            "adresse":""
+            },
+            {"nom":"DUT STID(Statistique et Traitement Informatique des Données)",
+            "centre":"Lille 2",
+            "annee":"2009",
+            "adresse":"Roubaix"
+            },
+            {"nom":"BAC Scientifique",
+            "centre":"La Sagesse",
+            "annee":"2005",
+            "adresse":"Lambersart"
+            }
+        ],
+        "experiences":[
+            {"nom":"Barman",
+            "entreprise":"Pico Bistro",
+            "dateDebut":"juin 2021",
+            "dateFin":"decembre 2022"
+            },
+            {"nom":"Driver",
+            "entreprise":"Match",
+            "dateDebut":"decembre 2020",
+            "dateFin":"avril 2021"
+            },
+            {"nom":"Barman",
+            "entreprise":"Do It Yourself",
+            "dateDebut":"septembre 2020",
+            "dateFin":"octobre 2020"
+            },
+            {"nom":"Brand Promoter",
+            "entreprise":"Beer Factory",
+            "dateDebut":"janvier 2018",
+            "dateFin":"decembre 2018"
+            },
+            {"nom":"Boucher",
+            "entreprise":"Carrefour Market",
+            "dateDebut":"Mai 2013",
+            "dateFin":"decembre 2017"
+            }
+        ],
+        "contact":[
+            {"telephone":"telephone"},
+            {"adresse":"adresse"},
+            {"mail":"e-mail"},
+            {"linkedin":"Linkedin"},
+            {"github":"Github"}
+        ]
+        }
+    ,
+    "english":
+        {"titreCompetence" : "IT Skills",
+        "titreFormation": "Diplomas",
+        "titreExperience":"Jobs",
+        "poste":"Junior Developer / Data Analyst ",
+        "formations":[
+                {"nom":"MS Data Analyst",
+                "centre":"Greta",
+                "annee":"2023",
+                "adresse":"Lille"
+                },
+                {"nom":"The Digital Nursery",
+                "centre":"M2I/AFPA",
+                "annee":"2023",
+                "adresse":"Lille"
+                },
+                {"nom":"NVQ Butcher",
+                "centre":"Campus pro",
+                "annee":"2014",
+                "adresse":""
+                },
+                {"nom":"Professional Title Truck transport",
+                "centre":"ASSIFEP",
+                "annee":"2011",
+                "adresse":""
+                },
+                {"nom":"DUT STID(Statistics and Computer Data Processing)",
+                "centre":"Lille 2",
+                "annee":"2009",
+                "adresse":"Roubaix"
+                },
+                {"nom":"High School Diploma Scientific",
+                "centre":"La Sagesse",
+                "annee":"2005",
+                "adresse":"Lambersart"
+                }
+            ],
+        "experiences":[
+                {"nom":"Barman",
+                "entreprise":"Pico Bistro",
+                "dateDebut":"june 2021",
+                "dateFin":"december 2022"
+                },
+                {"nom":"Driver",
+                "entreprise":"Match",
+                "dateDebut":"december 2020",
+                "dateFin":"april 2021"
+                },
+                {"nom":"Barman",
+                "entreprise":"Do It Yourself",
+                "dateDebut":"september 2020",
+                "dateFin":"october 2020"
+                },
+                {"nom":"Brand Promoter",
+                "entreprise":"Beer Factory",
+                "dateDebut":"january 2018",
+                "dateFin":"december 2018"
+                },
+                {"nom":"Butcher",
+                "entreprise":"Carrefour Market",
+                "dateDebut":"May 2013",
+                "dateFin":"december 2017"
+                }
+            ],
+        "contact":[
+            {"telephone":"phone"},
+            {"adresse":"adress"},
+            {"mail":"mail"},
+            {"linkedin":"Linkedin"},
+            {"github":"Github"}
+        ]
+        }
+    ,
+    "informations":{
+        "telephone":"(33) 06 59 10 21 66",
+        "adresse":"31 rue Abelard, appartement 1 59000 Lille",
+        "mail":"julien.cotte@live.fr",
+        "linkedin":"https://www.linkedin.com/in/julien-cotte-7a6141292/",
+        "github":"https://github.com/Fenriz1349"
+        }
 }
