@@ -4,58 +4,7 @@
         "titreFormation": "Formations",
         "titreExperience":"Emplois",
         "poste":"Developpeur / Data Analyst Junior",
-        "competences":[
-            {"nom":"Python",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"Java",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"Kotlin",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"SQL",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"HTML5 et CSS3",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"Javascript",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"React",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"API Rest",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"Git et Github",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            },
-            {"nom":"Power Bi",
-            "logo":"",
-            "certification":true,
-            "lienCertif":""
-            }
-        ],
+        "intro":"Lillois passionné d'informatique depuis ma jeunesse, je suis actuellement en reconversion pour devenir developpeur puis concepteur d'application.Decouvrez ici mes projets, les compétences et langages acquis ainsi qu'un apperçu de mon passé professionnel.",
         "formations":[
             {"nom":"MS Data Analyst",
             "centre":"Greta",
@@ -72,11 +21,6 @@
             "annee":"2014",
             "adresse":""
             },
-            {"nom":"TP Transport Routier",
-            "centre":"ASSIFEP",
-            "annee":"2011",
-            "adresse":""
-            },
             {"nom":"DUT STID(Statistique et Traitement Informatique des Données)",
             "centre":"Lille 2",
             "annee":"2009",
@@ -91,18 +35,8 @@
         "experiences":[
             {"nom":"Barman",
             "entreprise":"Pico Bistro",
-            "dateDebut":"juin 2021",
-            "dateFin":"decembre 2022"
-            },
-            {"nom":"Driver",
-            "entreprise":"Match",
-            "dateDebut":"decembre 2020",
-            "dateFin":"avril 2021"
-            },
-            {"nom":"Barman",
-            "entreprise":"Do It Yourself",
             "dateDebut":"septembre 2020",
-            "dateFin":"octobre 2020"
+            "dateFin":"decembre 2022"
             },
             {"nom":"Brand Promoter",
             "entreprise":"Beer Factory",
@@ -129,6 +63,7 @@
         "titreFormation": "Diplomas",
         "titreExperience":"Jobs",
         "poste":"Junior Developer / Data Analyst ",
+        "intro":"From Lille computer science passionate since my youth, I am currently retraining to become a developer then an application designer.Discover here my projects, the skills and languages ​​acquired as well as an overview of my professional past.",
         "formations":[
                 {"nom":"MS Data Analyst",
                 "centre":"Greta",
@@ -145,11 +80,6 @@
                 "annee":"2014",
                 "adresse":""
                 },
-                {"nom":"Professional Title Truck transport",
-                "centre":"ASSIFEP",
-                "annee":"2011",
-                "adresse":""
-                },
                 {"nom":"DUT STID(Statistics and Computer Data Processing)",
                 "centre":"Lille 2",
                 "annee":"2009",
@@ -164,18 +94,8 @@
         "experiences":[
                 {"nom":"Barman",
                 "entreprise":"Pico Bistro",
-                "dateDebut":"june 2021",
-                "dateFin":"december 2022"
-                },
-                {"nom":"Driver",
-                "entreprise":"Match",
-                "dateDebut":"december 2020",
-                "dateFin":"april 2021"
-                },
-                {"nom":"Barman",
-                "entreprise":"Do It Yourself",
                 "dateDebut":"september 2020",
-                "dateFin":"october 2020"
+                "dateFin":"december 2022"
                 },
                 {"nom":"Brand Promoter",
                 "entreprise":"Beer Factory",
@@ -197,6 +117,48 @@
         ]
         }
     ,
+    "competences":[
+        {"nom":"Python",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
+        "lienCertif":""
+        },
+        {"nom":"Java",
+        "logo":"https://banner2.cleanpng.com/20190623/uxe/kisspng-logo-java-development-kit-portable-network-graphic-5d0f25d6871765.6875406615612738145533.jpg",
+        "lienCertif":""
+        },
+        {"nom":"Kotlin",
+        "logo":"https://seeklogo.com/images/K/kotlin-logo-6A9E0484CA-seeklogo.com.png",
+        "lienCertif":""
+        },
+        {"nom":"SQL",
+        "logo":"https://e7.pngegg.com/pngimages/170/924/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-microsoft-text-logo.png",
+        "lienCertif":""
+        },
+        {"nom":"HTML5 et CSS3",
+        "logo":"https://cdn-icons-png.flaticon.com/512/732/732212.png",
+        "lienCertif":""
+        },
+        {"nom":"Javascript",
+        "logo":"https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png",
+        "lienCertif":""
+        },
+        {"nom":"React",
+        "logo":"https://c0.klipartz.com/pngpicture/452/495/gratis-png-reaccionar-javascript-angularjs-ionic-github-thumbnail.png",
+        "lienCertif":""
+        },
+        {"nom":"API Rest",
+        "logo": "https://toppng.com/uploads/preview/rest-api-icon-rest-api-icon-11553510526uqs2ynyga2.png",
+        "lienCertif":""
+        },
+        {"nom":"Git et Github",
+        "logo":"https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png",
+        "lienCertif":""
+        },
+        {"nom":"Power Bi",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png",
+        "lienCertif":""
+        }
+    ],
     "informations":{
         "telephone":"(33) 06 59 10 21 66",
         "adresse":"31 rue Abelard, appartement 1 59000 Lille",

@@ -6,35 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Cotte Julien</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js"></script>
 </head>
-<body>
-<header>
-    <div class="titre">
-        <h1>COTTE JULIEN</h1>
-        <span id="poste"></span>
-        <button class="btn-version"></button>
+<body class="darkMode">
+  <div id="switchMode">
+    <div class="form-check form-switch">
+        <input id ="langageSwitchInput" class="form-check-input" type="checkbox" role="switch">
+        <label id="langageSwitchLabel" class="form-check-label" ></label>
     </div>
-</header>
-<div class="container">
-    <section class="enTete">
-        <div class="profil">
-            <h2>Profil</h2>
-            <p> J'ai <span id="age"></span> ans, lillois, dans un projet de reconversion j'aimerais me tourner vers le numérique et le développement, en utilisant mes expériences et diplômes passés, dans ce domaine tourné vers le futur.
-            <br>Je suis passionné entre autre de musique, d'investissement, de numérique, et de lecture.</p>
-            </div>
-        <div class="contact">
-        </div>
-    </section>
-    <section class="experiencePro">
-        <div class="competences">
-        </div>
-        <div class="experiences">
-        </div>
-        <div class="formations">
-        </div>
-    </section>
+    <div class="form-check form-switch">
+        <input id ="colorModeInput" class="form-check-input" type="checkbox" role="switch">
+        <label id="colorModeLabel" class="form-check-label" ></label>
+    </div>
 </div>
+  <header class="titre">
+  </header>
+  <div class="intro">
+  </div>
+  <div class="accordion" id="accordionCV">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button id="boutonCompetence" class="accordion-button collapsed show" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body" id="panelCompetences">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button id="boutonFormations"class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body" id="panelFormations">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button id="boutonExperiences" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body" id="panelExperiences">
+          </div>
+        </div>
+      </div>
+    </div>
+  <aside>
+
+  </aside>
+  <footer class="contact">
+  </footer>
 </body>
 </html>

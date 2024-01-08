@@ -1,7 +1,7 @@
 //recuperation des données depuis le fichier data
 const reponse = await fetch('data.json');
 const data = await reponse.json();
-const langue = true
+var langue="francais";
 
 //fonction pour créer un lien hypertext
 function creerLien(parent,info){
@@ -20,14 +20,24 @@ function creerMail(parent,info){
        parent.appendChild(lien);
 }
 //fonction pour remplir le poste en fonction de la langue choisie
-function genererPoste(langue){
-       const poste = document.getElementById("poste");
-       poste.innerText=langue ? data.francais.poste : data.english.poste;
+function genererHeader(langue){
+       const sectionTitre = document.querySelector(".titre");
+       const sectionIntro = document.querySelector(".intro");
+       const titre=document.createElement("h1");
+       titre.innerText="Cotte Julien";
+       const poste = document.createElement("h2");
+       poste.innerText=data[langue].poste;
+       const intro = document.createElement("p");
+       intro.innerText=data[langue].intro;
+
+       sectionTitre.appendChild(titre);
+       sectionTitre.appendChild(poste);
+       sectionIntro.appendChild(intro);
 }
 //fonction pour générer la zone contact
 function genererContact(langue){
        //on recupere le contenu du json dans la langue selectionnée
-       const contenu = langue ? data.francais.contact : data.english.contact;
+       const contenu = data[langue].contact ;
        //on recupere la section contact
        const sectionContact = document.querySelector(".contact");
        const titre =document.createElement("h2");
@@ -55,107 +65,149 @@ function genererContact(langue){
 
 }
 //fonction pour générer le paragraphe sur les competences numérique
-function genererCompetences(data,langue){
-       const contenu = data.francais;
-       //on recupere la section competences
-       const sectionCompetences = document.querySelector(".competences");
+function genererCompetences(langue){
+       const contenu = data.competences;
        //création du titre de la section
-       const titreCompetence = document.createElement("h2");
-       titreCompetence.innerText = langue ? contenu.titreCompetence : data.english.titreCompetence
-       sectionCompetences.appendChild(titreCompetence)
+       const titreCompetence = document.getElementById("boutonCompetence");
+       titreCompetence.innerText = data[langue].titreCompetence;
        //création de la liste des competences
+       const bodyCompetence = document.getElementById("panelCompetences");
        const competenceListe = document.createElement("ul");
-       sectionCompetences.appendChild(competenceListe)
-       for (let i = 0; i < contenu.competences.length; i++) {
+       bodyCompetence.appendChild(competenceListe)
+       for (let i = 0; i < contenu.length; i++) {
            //peuplement de la liste
            const competence = document.createElement("li");
-           competence.innerText=contenu.competences[i].nom;
+           const logo = document.createElement("img");
+           logo.src=contenu[i].logo;
+           //logo.alt= contenu[i].nom+" logo";
+           logo.className="logo";
+           competence.appendChild(logo);
+           const texte= document.createElement("span");
+           texte.innerText=contenu[i].nom;
+           competence.appendChild(texte)
            competenceListe.appendChild(competence)       
         }
 
 }
 //fonction pour générer le paragraphe sur les expériences Pro
-function genererExperience(data,langue){
+function genererExperiences(langue){
        //on recupere le contenu du json dans la langue selectionnée
-       const contenu = langue ? data.francais : data.english;
-       //on recupere la section experiences
-       const sectionExperiences = document.querySelector(".experiences");
+       const contenu = data[langue].experiences;
        //création du titre de la section
-       const titreExperiences = document.createElement("h2");
-       titreExperiences.innerText = contenu.titreExperience
-       sectionExperiences.appendChild(titreExperiences)
-       for (let i = 0; i < contenu.experiences.length; i++) {
+       const titreExperiences = document.getElementById("boutonExperiences");
+       titreExperiences.innerText = data[langue].titreExperience;
+       const bodyExperiences=document.getElementById("panelExperiences")
+       for (let i = 0; i < contenu.length; i++) {
               //peuplement des expériences
               const experience = document.createElement("div");
    
               const titreExperience = document.createElement("h3")
-              titreExperience.innerText=contenu.experiences[i].nom;
+              titreExperience.innerText=contenu[i].nom;
               experience.appendChild(titreExperience);
               
               const anneeExperience = document.createElement("h4")
-              anneeExperience.innerText=`${contenu.experiences[i].dateDebut} - ${contenu.experiences[i].dateFin}`;
+              anneeExperience.innerText=`${contenu[i].dateDebut} - ${contenu[i].dateFin}`;
               experience.appendChild(anneeExperience);
    
               const entrepriseExperience = document.createElement("p")
-              entrepriseExperience.innerText=contenu.experiences[i].entreprise;
+              entrepriseExperience.innerText=contenu[i].entreprise;
               experience.appendChild(entrepriseExperience);
           
-              sectionExperiences.appendChild(experience);
+              bodyExperiences.appendChild(experience);
            }
 
 }
-
 //fonction pour générer le paragraphe sur les diplomes et formations
-function genererFormation(data,langue){
+function genererFormations(langue){
        //on recupere le contenu du json dans la langue selectionnée
-       const contenu = langue ? data.francais : data.english;
-       //on recupere la section formation
-       const sectionFormation = document.querySelector(".formations");
+       const contenu = data[langue].formations;
        //création du titre de la section
-       const titreFormation = document.createElement("h2");
-       titreFormation.innerText = contenu.titreFormation
-       sectionFormation.appendChild(titreFormation)
-
-       for (let i = 0; i < contenu.formations.length; i++) {
+       const boutonFormations = document.getElementById("boutonFormations");
+       boutonFormations.innerText = data[langue].titreFormation
+       const bodyFormations = document.getElementById("panelFormations")
+       for (let i = 0; i < contenu.length; i++) {
            //peuplement de la formation
            const diplome = document.createElement("div");
 
            const titreDiplome = document.createElement("h3")
-           titreDiplome.innerText=contenu.formations[i].nom;
+           titreDiplome.innerText=contenu[i].nom;
            diplome.appendChild(titreDiplome);
            
            const anneeDiplome = document.createElement("h4")
-           anneeDiplome.innerText=contenu.formations[i].annee;
+           anneeDiplome.innerText=contenu[i].annee;
            diplome.appendChild(anneeDiplome);
 
            const centreDiplome = document.createElement("p")
-           centreDiplome.innerText=contenu.formations[i].centre;
+           centreDiplome.innerText=contenu[i].centre;
            diplome.appendChild(centreDiplome);
        
-          sectionFormation.appendChild(diplome);
+           bodyFormations.appendChild(diplome);
         }
 }
 function genererBoutonVersion(langue){
-       const boutonVersion = document.querySelector(".btn-version");
-       langue? boutonVersion.innerText="English" :boutonVersion.innerText="Français";
-       boutonVersion.addEventListener("click", function () {
-           langue=!langue;
-           document.getElementById("poste").innerText="";
-           document.querySelector(".contact").innerHTML="";
-           document.querySelector(".competences").innerHTML="";
-           document.querySelector(".experiences").innerHTML="";
-           document.querySelector(".formations").innerHTML="";
-           genererPoste(langue);
-           genererContact(langue);
-           genererCompetences(data,langue);
-           genererFormation(data,langue);
-           genererExperience(data,langue);
-           langue? boutonVersion.innerText="English" :boutonVersion.innerText="Français";
+       const boutonInput = document.getElementById("langageSwitchInput");
+       const boutonLabel = document.getElementById("langageSwitchLabel");
+       boutonLabel.innerText="Français";
+       boutonInput.addEventListener("change", function () {
+           if (this.checked){
+              langue="english";
+              boutonLabel.innerText="English";
+              document.querySelector(".titre").innerHTML="";
+              document.querySelector(".intro").innerHTML="";
+              document.querySelector(".contact").innerHTML="";
+              document.getElementById("boutonCompetence").innerText="";
+              document.getElementById("panelCompetences").innerHTML="";
+              document.getElementById("boutonFormations").innerText="";
+              document.getElementById("panelFormations").innerHTML="";
+              document.getElementById("boutonExperiences").innerText="";
+              document.getElementById("panelExperiences").innerHTML="";
+              genererHeader(langue);
+              genererContact(langue);
+              genererCompetences(langue);
+              genererFormations(langue);
+              genererExperiences(langue);
+           }else{
+              langue="francais";
+              boutonLabel.innerText="Français";
+              document.querySelector(".titre").innerHTML="";
+              document.querySelector(".intro").innerHTML="";
+              document.querySelector(".contact").innerHTML="";
+              document.querySelector(".titre").innerHTML="";
+              document.querySelector(".intro").innerHTML="";
+              document.querySelector(".contact").innerHTML="";
+              document.getElementById("boutonCompetence").innerText="";
+              document.getElementById("panelCompetences").innerHTML="";
+              document.getElementById("boutonFormations").innerText="";
+              document.getElementById("panelFormations").innerHTML="";
+              document.getElementById("boutonExperiences").innerText="";
+              document.getElementById("panelExperiences").innerHTML="";
+              genererHeader(langue);
+              genererContact(langue);
+              genererCompetences(langue);
+              genererFormations(langue);
+              genererExperiences(langue);
+              }
        });
 }
-genererBoutonVersion(langue);
-genererPoste(langue);
+function genererBoutonMode(){
+       const boutonInput = document.getElementById("colorModeInput");
+       const boutonLabel = document.getElementById("colorModeLabel");
+       const bodyMode=document.querySelector("body");
+       boutonLabel.innerText="light mode";
+       boutonInput.addEventListener("change", function () {
+           if (this.checked){
+              bodyMode.className="lightMode";
+              boutonLabel.innerText="light mode";
+           }else{
+              bodyMode.className="darkMode";
+              boutonLabel.innerText="dark mode";
+           }
+       });
+}
+genererHeader(langue);
 genererContact(langue);
-genererCompetences(data,langue);
-genererFormation(data,langue);
-genererExperience(data,langue);
+genererCompetences(langue);
+genererFormations(langue);
+genererExperiences(langue);
+genererBoutonVersion(langue);
+genererBoutonMode();

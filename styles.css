@@ -1,56 +1,53 @@
-*{margin: 0;
-padding: 0;
+*{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    font-family: Helvetica;
 }
-/* style du header, centrage du titre, image de profil à droite */
+.lightMode{
+    color:black;
+    background: rgb(75,122,254);
+background: linear-gradient(130deg, rgba(75,122,254,1) 0%, rgba(98,176,200,1) 0%, rgba(255,255,255,1) 100%);
+}
+.darkMode{
+    color:whitesmoke;
+    background: rgb(0,0,0);
+    background: linear-gradient(130deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,10,92,1) 100%);
+}
 header{
     margin-left: 5px;
-    background-color: crimson;
-    border-radius: 25px;
     text-align: center;
     height: 150px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
     position:sticky;
     height: 20vh;
     min-height: 150px;
-    }
-.logo{
-        grid-column-start: 1;
-        text-align: left;
-    }
-header img{
-        width: 150px;
-    }
-    .titre{
-        grid-column-start: 2;
-    }
-/* style de la partie profil et contact */
-.main{
-margin: 10px;
-display: flex;
-flex-direction: column;
-height: 80vh;
-overflow-y: scroll;
-}
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 1);
+    background-image: url(images/backgroundHeader.jpg);
+    color: whitesmoke;
 
-.enTete{
-    padding: 20px;
+}
+#switchMode{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
-    text-align: left;
-    justify-content: space-around;
+    justify-content:center;
 }
-.profil{
-    max-width: 200vh;
-}
-/* style de la partie pro, competences et diplomes */
-.experiencePro{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-.competences img{
-    width: 50px;
-}
-.formation{
+.main{
+    margin: 10px;
     display: flex;
     flex-direction: column;
+    height: 80vh;
+    overflow-y: scroll;
+}
+.accordion{
+    margin-left: 20px;
+    width: 80%;
+}
+.logo{
+    width : 60px;
+    height : 60px;
+    border-radius: 0px;
 }
