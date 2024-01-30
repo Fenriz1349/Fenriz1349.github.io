@@ -3,9 +3,14 @@
         {"titreCompetence": "Compétences Informatiques",
         "titreFormation": "Formations",
         "titreExperience":"Emplois",
-        "poste":"Developpeur / Data Analyst Junior",
-        "intro":"Lillois passionné d'informatique depuis ma jeunesse, je suis actuellement en reconversion pour devenir developpeur puis concepteur d'application.Decouvrez ici mes projets, les compétences et langages acquis ainsi qu'un apperçu de mon passé professionnel.",
+        "poste":"Developpeur d'application IOS Junior",
+        "intro":"Lillois passionné d'informatique depuis ma jeunesse, je suis actuellement en reconversion pour devenir developpeur d'application iOS, puis concepteur d'application.Decouvrez ici mes projets, les compétences et langages acquis ainsi qu'un apperçu de mon passé professionnel.",
         "formations":[
+            {"nom":"SAS Apple Fondation Program",
+            "centre":"Simplon",
+            "annee":"2024",
+            "adresse":"Lille"
+                },
             {"nom":"MS Data Analyst",
             "centre":"Greta",
             "annee":"2023",
@@ -62,9 +67,14 @@
         {"titreCompetence" : "IT Skills",
         "titreFormation": "Diplomas",
         "titreExperience":"Jobs",
-        "poste":"Junior Developer / Data Analyst ",
-        "intro":"From Lille computer science passionate since my youth, I am currently retraining to become a developer then an application designer.Discover here my projects, the skills and languages ​​acquired as well as an overview of my professional past.",
+        "poste":"Junior IOS App Developer ",
+        "intro":"From Lille, computer science passionate since my youth, I am currently retraining to become an iOS app developer then an application designer.Discover here my projects, the skills and languages I ​​acquired as well as an overview of my professional past.",
         "formations":[
+                {"nom":"SAS Apple Fondation Program",
+                "centre":"Simplon",
+                "annee":"2024",
+                "adresse":"Lille"
+                },
                 {"nom":"MS Data Analyst",
                 "centre":"Greta",
                 "annee":"2023",
@@ -118,6 +128,10 @@
         }
     ,
     "competences":[
+        {"nom":"Swift/SwiftUI",
+        "logo":"https://w7.pngwing.com/pngs/830/800/png-transparent-apple-bird-code-ios-logo-swift-logos-icon-thumbnail.png",
+        "lienCertif":""
+        },
         {"nom":"Python",
         "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
         "lienCertif":""

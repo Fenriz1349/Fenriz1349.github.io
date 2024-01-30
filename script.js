@@ -1,7 +1,7 @@
 //recuperation des données depuis le fichier data
 const reponse = await fetch('data.json');
 const data = await reponse.json();
-var langue="francais";
+let langue="francais";
 
 //fonction pour créer un lien hypertext
 function creerLien(parent,info){
@@ -193,14 +193,17 @@ function genererBoutonMode(){
        const boutonInput = document.getElementById("colorModeInput");
        const boutonLabel = document.getElementById("colorModeLabel");
        const bodyMode=document.querySelector("body");
-       boutonLabel.innerText="light mode";
+       const accordionBodyMode = document.querySelector("div.accordion-body");
+       boutonLabel.innerText="dark mode";
        boutonInput.addEventListener("change", function () {
            if (this.checked){
               bodyMode.className="lightMode";
               boutonLabel.innerText="light mode";
+              accordionBodyMode.style.color="green"
            }else{
               bodyMode.className="darkMode";
               boutonLabel.innerText="dark mode";
+              accordionBodyMode.style.color="red"
            }
        });
 }

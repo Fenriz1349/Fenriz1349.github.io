@@ -6,13 +6,11 @@
 }
 .lightMode{
     color:black;
-    background: rgb(75,122,254);
-background: linear-gradient(130deg, rgba(75,122,254,1) 0%, rgba(98,176,200,1) 0%, rgba(255,255,255,1) 100%);
+    background: white;
 }
 .darkMode{
     color:whitesmoke;
-    background: rgb(0,0,0);
-    background: linear-gradient(130deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,10,92,1) 100%);
+    background: rgb(12,12,12);
 }
 header{
     margin-left: 5px;
@@ -43,9 +41,25 @@ header{
     overflow-y: scroll;
 }
 .accordion{
-    margin-left: 20px;
+  margin-left: 20px;
     width: 80%;
 }
+.accordion-body { 
+    color:whitesmoke;
+    background: rgb(12,12,12);
+    } 
+.accordion-item {
+    color:whitesmoke;
+    background: rgb(0,0,139);
+}
+.accordion-button {
+    color:whitesmoke;
+    background: rgb(12,12,12);
+}
+.accordion-button:not(.collapsed) {
+    color:whitesmoke;
+    background: rgb(12,12,12);
+  }
 .logo{
     width : 60px;
     height : 60px;
