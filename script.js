@@ -84,8 +84,24 @@ function genererCompetences(langue){
            competence.appendChild(logo);
            const texte= document.createElement("span");
            texte.innerText=contenu[i].nom;
-           competence.appendChild(texte)
-           competenceListe.appendChild(competence)       
+           competence.appendChild(texte);
+           if (contenu[i].lienGithub != "") {
+            const lien=document.createElement("a")
+            const link = document.createTextNode("Gitbuh "+contenu[i].nom);
+            lien.appendChild(link); 
+            lien.href = contenu[i].lienGithub;
+            lien.target="_blank";
+            competence.appendChild(lien);
+           }
+           if (contenu[i].lienCertif != "") {
+            const lien=document.createElement("a")
+            const link = document.createTextNode("Certification OpenClassrooms");
+            lien.appendChild(link); 
+            lien.href = contenu[i].lienCertif;
+            lien.target="_blank";
+            competence.appendChild(lien);
+           }
+           competenceListe.appendChild(competence);   
         }
 
 }

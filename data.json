@@ -130,47 +130,63 @@
     "competences":[
         {"nom":"Swift/SwiftUI",
         "logo":"https://w7.pngwing.com/pngs/830/800/png-transparent-apple-bird-code-ios-logo-swift-logos-icon-thumbnail.png",
-        "lienCertif":""
+        "lienGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=swift&sort=",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/1696019247"
         },
         {"nom":"Python",
         "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
-        "lienCertif":""
-        },
-        {"nom":"Java",
-        "logo":"https://banner2.cleanpng.com/20190623/uxe/kisspng-logo-java-development-kit-portable-network-graphic-5d0f25d6871765.6875406615612738145533.jpg",
-        "lienCertif":""
+        "lienGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=python&sort=",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/9923684471"
         },
         {"nom":"Kotlin",
         "logo":"https://seeklogo.com/images/K/kotlin-logo-6A9E0484CA-seeklogo.com.png",
-        "lienCertif":""
-        },
-        {"nom":"SQL",
-        "logo":"https://e7.pngegg.com/pngimages/170/924/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-microsoft-text-logo.png",
-        "lienCertif":""
-        },
-        {"nom":"HTML5 et CSS3",
-        "logo":"https://cdn-icons-png.flaticon.com/512/732/732212.png",
-        "lienCertif":""
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/9682213303"
         },
         {"nom":"Javascript",
         "logo":"https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png",
-        "lienCertif":""
+        "lienGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=javascript&sort=",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/2045792275"
+        },
+        {"nom":"Java",
+        "logo":"https://banner2.cleanpng.com/20190623/uxe/kisspng-logo-java-development-kit-portable-network-graphic-5d0f25d6871765.6875406615612738145533.jpg",
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/2792029064"
+        },
+        {"nom":"SQL",
+        "logo":"https://e7.pngegg.com/pngimages/170/924/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-microsoft-text-logo.png",
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/5167640348"
+        },
+        {"nom":"HTML5 et CSS3",
+        "logo":"https://cdn-icons-png.flaticon.com/512/732/732212.png",
+        "lienGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=html&sort=",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/3207405707"
+        },
+        {"nom":"TypeScript",
+        "logo":"https://cdn.iconscout.com/icon/free/png-256/free-typescript-3629713-3030764.png",
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/4288292377"
         },
         {"nom":"React",
         "logo":"https://c0.klipartz.com/pngpicture/452/495/gratis-png-reaccionar-javascript-angularjs-ionic-github-thumbnail.png",
-        "lienCertif":""
+        "lienGithub" : "https://github.com/Fenriz1349/la-maison-jungle",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/5912403849"
         },
         {"nom":"API Rest",
         "logo": "https://toppng.com/uploads/preview/rest-api-icon-rest-api-icon-11553510526uqs2ynyga2.png",
-        "lienCertif":""
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/6358927299"
         },
         {"nom":"Git et Github",
         "logo":"https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png",
-        "lienCertif":""
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/9472338171"
         },
         {"nom":"Power Bi",
         "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png",
-        "lienCertif":""
+        "lienGithub" : "",
+        "lienCertif":"https://openclassrooms.com/fr/course-certificates/7549982905"
         }
     ],
     "informations":{
