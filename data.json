@@ -3,7 +3,7 @@
         {"titreCompetence": "Compétences Informatiques",
         "titreFormation": "Formations",
         "titreExperience":"Emplois",
-        "poste":"Developpeur d'application IOS Junior",
+        "poste":"Developpeur d'application IOS en formation",
         "intro":"Lillois passionné d'informatique depuis ma jeunesse, je suis actuellement en reconversion pour devenir developpeur d'application iOS, puis concepteur d'application.Decouvrez ici mes projets, les compétences et langages acquis ainsi qu'un apperçu de mon passé professionnel.",
         "formations":[
             {"nom":"SAS Apple Fondation Program",
@@ -55,8 +55,8 @@
             }
         ],
         "contact":[
-            {"telephone":"telephone"},
-            {"adresse":"adresse"},
+            {"telephone":"Telephone"},
+            {"adresse":"Adresse"},
             {"mail":"e-mail"},
             {"linkedin":"Linkedin"},
             {"github":"Github"}
@@ -67,7 +67,7 @@
         {"titreCompetence" : "IT Skills",
         "titreFormation": "Diplomas",
         "titreExperience":"Jobs",
-        "poste":"Junior IOS App Developer ",
+        "poste":"IOS App Developer in training",
         "intro":"From Lille, computer science passionate since my youth, I am currently retraining to become an iOS app developer then an application designer.Discover here my projects, the skills and languages I ​​acquired as well as an overview of my professional past.",
         "formations":[
                 {"nom":"SAS Apple Fondation Program",
@@ -119,8 +119,8 @@
                 }
             ],
         "contact":[
-            {"telephone":"phone"},
-            {"adresse":"adress"},
+            {"telephone":"Phone"},
+            {"adresse":"Adress"},
             {"mail":"mail"},
             {"linkedin":"Linkedin"},
             {"github":"Github"}
@@ -140,7 +140,7 @@
         },
         {"nom":"Kotlin",
         "logo":"https://seeklogo.com/images/K/kotlin-logo-6A9E0484CA-seeklogo.com.png",
-        "lienGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=kotlin&sort=",
+        "lienGithub" : "",
         "lienCertif":"https://openclassrooms.com/fr/course-certificates/9682213303"
         },
         {"nom":"Javascript",
