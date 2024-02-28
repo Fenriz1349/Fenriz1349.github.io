@@ -14,6 +14,27 @@ function creerLien(parent,info){
        lien.target="_blank"
        parent.appendChild(lien);
 }
+//fonction pour créer le bouton d
+function createSwitchLangue() {
+   const navbar = document.querySelector('.navbar');
+   const switchDiv = document.createElement('div');
+   switchDiv.classList.add('form-check', 'form-switch');
+ 
+   const langageSwitchInput = document.createElement('input');
+   langageSwitchInput.id = 'langageSwitchInput';
+   langageSwitchInput.classList.add('form-check-input');
+   langageSwitchInput.type = 'checkbox';
+   langageSwitchInput.setAttribute('role', 'switch');
+ 
+   const langageSwitchLabel = document.createElement('label');
+   langageSwitchLabel.id = 'langageSwitchLabel';
+   langageSwitchLabel.classList.add('form-check-label');
+ 
+   switchDiv.appendChild(langageSwitchInput);
+   switchDiv.appendChild(langageSwitchLabel);
+ 
+   navbar.appendChild(switchDiv);
+ }
 //fonction pour créer un lien mail
 function creerMail(parent,info){
        const lien = document.createElement("a");
@@ -22,8 +43,46 @@ function creerMail(parent,info){
        lien.target="_blank"
        parent.appendChild(lien);
 }
+//fonction pour generer la navbar
+function genererNavBar (langue){
+   const links = [
+      { text: 'Portfolio', url: '#' },
+      { text: data[langue].titreCompetence, url: '#' },
+      { text: data[langue].titreFormation, url: '#' },
+      { text: data[langue].titreExperience, url: '#' },
+      { text: 'Contacts', url: '#contacts' },
+    ];
+
+   const navbar = document.querySelector('.navbar');
+   
+  links.forEach(function(link) {
+    const a = document.createElement('a');
+    a.href = link.url;
+    a.textContent = link.text;
+    navbar.appendChild(a);
+  });
+} 
+function genererLienHeader(){
+   const sectionHeader = document.querySelector(".lienHeader")
+   const lienImage = [
+      { href: data.informations.github, src: "https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg" },
+      { href: data.informations.linkedin, src: 'https://get-picto.com/wp-content/uploads/2023/06/Capture-decran-2023-06-21-a-18.42.07.webp' },
+      { href: data.informations.codewars, src: 'https://static-00.iconduck.com/assets.00/codewars-icon-512x509-knvtsgna.png' }
+   ]
+   lienImage.forEach(function(link){
+      const a = document.createElement('a');
+      a.href = link.href;
+      a.target="_blank";
+      const image = document.createElement('img');
+      image.src = link.src;
+      image.className="logo";
+      a.appendChild(image);
+      sectionHeader.appendChild(a)
+   })
+
+}
 //fonction pour remplir le poste en fonction de la langue choisie
-function genererHeader(langue){
+function genererTitre(langue){
        const sectionTitre = document.querySelector(".titre");
        const sectionIntro = document.querySelector(".intro");
        const titre=document.createElement("h1");
@@ -163,49 +222,23 @@ function genererFormations(langue){
            bodyFormations.appendChild(diplome);
         }
 }
-function genererBoutonVersion(langue){
-       const boutonInput = document.getElementById("langageSwitchInput");
-       const boutonLabel = document.getElementById("langageSwitchLabel");
-       boutonLabel.innerText="Français";
-       boutonInput.addEventListener("change", function () {
-           if (this.checked){
-              langue="english";
-              boutonLabel.innerText="English";
-              document.querySelector(".titre").innerHTML="";
-              document.querySelector(".intro").innerHTML="";
-              document.querySelector(".contact").innerHTML="";
-              document.getElementById("boutonCompetence").innerText="";
-              document.getElementById("panelCompetences").innerHTML="";
-              document.getElementById("boutonFormations").innerText="";
-              document.getElementById("panelFormations").innerHTML="";
-              document.getElementById("boutonExperiences").innerText="";
-              document.getElementById("panelExperiences").innerHTML="";
-              genererHeader(langue);
-              genererContact(langue);
-              genererCompetences(langue);
-              genererFormations(langue);
-              genererExperiences(langue);
-           }else{
-              langue="francais";
-              boutonLabel.innerText="Français";
-              document.querySelector(".titre").innerHTML="";
-              document.querySelector(".intro").innerHTML="";
-              document.querySelector(".contact").innerHTML="";
-              document.querySelector(".titre").innerHTML="";
-              document.querySelector(".intro").innerHTML="";
-              document.querySelector(".contact").innerHTML="";
-              document.getElementById("boutonCompetence").innerText="";
-              document.getElementById("panelCompetences").innerHTML="";
-              document.getElementById("boutonFormations").innerText="";
-              document.getElementById("panelFormations").innerHTML="";
-              document.getElementById("boutonExperiences").innerText="";
-              document.getElementById("panelExperiences").innerHTML="";
-              genererHeader(langue);
-              genererContact(langue);
-              genererCompetences(langue);
-              genererFormations(langue);
-              genererExperiences(langue);
-              }
+//fonction pour modifier l'affichage en fonction de la langue choisie
+function changerVersion(langue){
+   const boutonInput = document.getElementById("langageSwitchInput");
+   const boutonLabel = document.getElementById("langageSwitchLabel");
+   boutonLabel.innerText="Français";
+   boutonInput.addEventListener("change", function () {
+        if (this.checked){
+            langue="english";
+            boutonLabel.innerText="English";
+            viderHtml();
+            genererPage(langue);
+         }else{
+            langue="francais";
+            boutonLabel.innerText="Français";
+            viderHtml();
+            genererPage(langue);
+            }
        });
 }
 function genererBoutonMode(){
@@ -263,11 +296,32 @@ async function genererCodeWars(){
    }
    
 }
-genererHeader(langue);
-genererContact(langue);
-genererCompetences(langue);
-genererFormations(langue);
-genererExperiences(langue);
-genererBoutonVersion(langue);
-//genererBoutonMode();
-genererCodeWars();
+//fonction pour generer chaque element de la page
+function genererPage (langue){
+ //  createSwitchLangue();
+   genererNavBar(langue);
+   genererLienHeader();
+   genererTitre(langue);
+   genererContact(langue);
+   genererCompetences(langue);
+   genererFormations(langue);
+   genererExperiences(langue);
+   genererCodeWars();
+}
+//fonction pour vider chaque element de la page
+function viderHtml() {
+   document.querySelector(".navbar").innerHTML="";
+   document.querySelector(".lienHeader").innerHTML="";
+   document.querySelector(".titre").innerHTML="";
+   document.querySelector(".intro").innerHTML="";
+   document.querySelector(".contact").innerHTML="";
+   document.querySelector(".codewars").innerHTML="";
+   document.getElementById("boutonCompetence").innerText="";
+   document.getElementById("panelCompetences").innerHTML="";
+   document.getElementById("boutonFormations").innerText="";
+   document.getElementById("panelFormations").innerHTML="";
+   document.getElementById("boutonExperiences").innerText="";
+   document.getElementById("panelExperiences").innerHTML="";
+}
+genererPage(langue);
+changerVersion(langue);

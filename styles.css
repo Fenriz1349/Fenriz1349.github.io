@@ -6,6 +6,9 @@
     font-size: 17px;
     color:rgb(170, 174, 182);
 }
+body{
+    margin-top: 75px;
+}
 h1{
     color:rgb(209,215,224);
     font-size: 60px;
@@ -26,8 +29,22 @@ h3{
     color:rgb(209,215,224);
     background: rgb(17,19,21);
 }
-
 header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgb(5, 5, 139);
+    margin-top: 0;
+}
+header a {
+    color:rgb(170, 174, 182);
+}
+.titre{
     margin-left: 5px;
     text-align: center;
     height: 150px;
@@ -38,14 +55,14 @@ header{
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 1);
     background-image: url(images/backgroundHeader.jpg);
     color: whitesmoke;
-
 }
 #switchMode{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    display: flex;
+    display: flex; 
+    flex-direction: row;
     justify-content:center;
 }
 .main{
