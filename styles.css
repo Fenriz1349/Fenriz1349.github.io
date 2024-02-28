@@ -2,16 +2,31 @@
     margin: 5px;
     padding: 5px;
     border-radius: 25px;
-    font-family: Helvetica;
+    font-family: Georgia;
+    font-size: 17px;
+    color:rgb(170, 174, 182);
+}
+h1{
+    color:rgb(209,215,224);
+    font-size: 60px;
+}
+h2{
+    color:rgb(209,215,224);
+    font-size: 50px;
+}
+h3{
+    color:rgb(209,215,224);
+    font-size: 30px;
 }
 .lightMode{
-    color:black;
+    color:rgb(17,19,21);
     background: white;
 }
 .darkMode{
-    color:whitesmoke;
-    background: rgb(12,12,12);
+    color:rgb(209,215,224);
+    background: rgb(17,19,21);
 }
+
 header{
     margin-left: 5px;
     text-align: center;
@@ -36,13 +51,19 @@ header{
 .main{
     margin: 10px;
     display: flex;
-    flex-direction: column;
-    height: 80vh;
-    overflow-y: scroll;
+    flex-direction: row;
+    justify-content: space-between;
+ 
 }
 .accordion{
-  margin-left: 20px;
-    width: 80%;
+    flex-direction: column;
+    margin: 20px;
+    width: 70%;
+}
+.codewars{
+    margin: 20px;
+    height:max-content;
+    background: rgb(5, 5, 139);
 }
 .accordion-body { 
     color:whitesmoke;
@@ -50,14 +71,15 @@ header{
     } 
 .accordion-item {
     color:whitesmoke;
-    background: rgb(0,0,139);
+    background: rgb(5,5,139);
 }
 .accordion-button {
-    color:whitesmoke;
+    color:rgb(209,215,224);
     background: rgb(12,12,12);
+    font-size: 30px;
 }
 .accordion-button:not(.collapsed) {
-    color:whitesmoke;
+    color:rgb(209,215,224);
     background: rgb(12,12,12);
   }
 .logo{

@@ -2,7 +2,10 @@
 const reponse = await fetch('data.json');
 const data = await reponse.json();
 let langue="francais";
-
+//fonction pour mettre la première lettre en majuscule
+function mettreMajuscule (mot){
+   return mot.charAt(0).toUpperCase()+ mot.slice(1)
+}
 //fonction pour créer un lien hypertext
 function creerLien(parent,info){
        const lien = document.createElement("a");
@@ -41,7 +44,7 @@ function genererContact(langue){
        //on recupere la section contact
        const sectionContact = document.querySelector(".contact");
        const titre =document.createElement("h2");
-       titre.innerText="contact";
+       titre.innerText="Contacts";
        sectionContact.appendChild(titre);
        //création de la liste des competences
        const contactListe = document.createElement("ul");
@@ -95,7 +98,7 @@ function genererCompetences(langue){
            }
            if (contenu[i].lienCertif != "") {
             const lien=document.createElement("a")
-            const link = document.createTextNode("Certification OpenClassrooms");
+            const link = document.createTextNode("OpenClassrooms");
             lien.appendChild(link); 
             lien.href = contenu[i].lienCertif;
             lien.target="_blank";
@@ -216,12 +219,49 @@ function genererBoutonMode(){
               bodyMode.className="lightMode";
               boutonLabel.innerText="light mode";
               accordionBodyMode.style.color="green"
+              accordionBodyMode.background= rgb(48,53,60);
            }else{
               bodyMode.className="darkMode";
               boutonLabel.innerText="dark mode";
-              accordionBodyMode.style.color="red"
+              accordionBodyMode.style.color=rgb(17,19,21);
+              accordionBodyMode.background= rgb(12,12,12);
            }
        });
+}
+
+//fonction pour generer la liste des rangs de chaque languages sur codewars
+async function genererCodeWars(){
+   //recuperation des donnée sur codewars
+   const reponse = await fetch("https://www.codewars.com/api/v1/users/Fenriz1349",{
+      method : "GET"
+   });
+   const dataCodewars = await reponse.json();
+   //console.log(dataCodewars)
+   //variable pour stocker les données generales du compte
+   const dataOverall = dataCodewars.ranks.overall;
+   //variable pour stocker les données de chaque language
+   const dataLanguages = Object.entries(dataCodewars.ranks.languages);
+   //on recupere la section contact
+   const sectionCodewars = document.querySelector(".codewars");
+   const titre =document.createElement("h2");
+   titre.innerText="Code Wars";
+   sectionCodewars.appendChild(titre);
+   const overall =document.createElement("h3");
+   overall.innerText=`${dataOverall.score} points, rang : ${dataOverall.name} `;
+   sectionCodewars.appendChild(overall);
+   dataLanguages.sort((a, b) => {
+       return b[1].score - a[1].score;
+     });
+    //création de la liste des langages
+    const langagesListe = document.createElement("ul");
+    sectionCodewars.appendChild(langagesListe)
+    for (let langue of dataLanguages) {
+      //peuplement de la liste
+      const langage = document.createElement("li");
+      langage.innerText=`${mettreMajuscule(langue[0])} : ${langue[1].score} pts, rang : ${langue[1].name}`;
+      langagesListe.appendChild(langage)       
+   }
+   
 }
 genererHeader(langue);
 genererContact(langue);
@@ -229,4 +269,5 @@ genererCompetences(langue);
 genererFormations(langue);
 genererExperiences(langue);
 genererBoutonVersion(langue);
-genererBoutonMode();
+//genererBoutonMode();
+genererCodeWars();
