@@ -4,7 +4,7 @@
         "titreFormation": "Formations",
         "titreExperience":"Emplois",
         "poste":"Developpeur d'application IOS en formation",
-        "intro":"Lillois passionné d'informatique depuis ma jeunesse, je suis actuellement en reconversion pour devenir developpeur d'application iOS, puis concepteur d'application.Decouvrez ici mes projets, les compétences et langages acquis ainsi qu'un apperçu de mon passé professionnel.",
+        "intro":"Lillois passionné d'informatique et très curieux. \n Je suis actuellement en train de me former au dev d'application mobile iOS dans l'Apple Fondation Program Extended. \n Je me forme aussi au dev Web et Android, ainsi qu'à la gestion d'API \n Découvrez ici mes projets, mes avancées dans les langages et la programmation ainsi que mes formations et passé professionnelle. \n Je suis actuellement en recherche d'alternance ou de mentorat donc n'hésitez pas à me contacter !",
         "formations":[
             {"nom":"SAS Apple Fondation Program",
             "centre":"Simplon",
@@ -68,7 +68,7 @@
         "titreFormation": "Diplomas",
         "titreExperience":"Jobs",
         "poste":"IOS App Developer in training",
-        "intro":"From Lille, computer science passionate since my youth, I am currently retraining to become an iOS app developer then an application designer.Discover here my projects, the skills and languages I ​​acquired as well as an overview of my professional past.",
+        "intro":"Lille-based computer enthusiast and very curious. \n Currently, I am undergoing training in iOS mobile application development in the Apple Foundation Program Extended. \n I am also learning web and Android development, as well as API management. \n Explore here my projects, my progress in languages and programming, as well as my training and professional background. \n I am currently looking for an apprenticeship or mentorship, so feel free to contact me!",
         "formations":[
                 {"nom":"SAS Apple Fondation Program",
                 "centre":"Simplon",

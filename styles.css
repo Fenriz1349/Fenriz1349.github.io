@@ -4,30 +4,30 @@
     border-radius: 25px;
     font-family: Georgia;
     font-size: 17px;
-    color:rgb(170, 174, 182);
+    color: var(--whiteFontPrincipal);
 }
 body{
     margin-top: 75px;
 }
 h1{
-    color:rgb(209,215,224);
-    font-size: 60px;
-}
-h2{
-    color:rgb(209,215,224);
+    color:var(--whiteTittle);
     font-size: 50px;
 }
+h2{
+    color:var(--whiteTittle);
+    font-size: 40px;
+}
 h3{
-    color:rgb(209,215,224);
-    font-size: 30px;
+    color:var(--whiteTittle);
+    font-size: 25px;
 }
 .lightMode{
-    color:rgb(17,19,21);
+    color:var(--blackBackground);
     background: white;
 }
 .darkMode{
-    color:rgb(209,215,224);
-    background: rgb(17,19,21);
+    color:var(--whiteTittle);
+    background: var(--blackBackground)
 }
 header{
     position: fixed;
@@ -38,11 +38,17 @@ header{
     left: 0;
     top: 0;
     z-index: 1000;
-    background: rgb(5, 5, 139);
+    background: var(--darkBlueBackground);
     margin-top: 0;
+    height: 90px;
 }
 header a {
-    color:rgb(170, 174, 182);
+    color:var(whiteFontPrincipal);
+    font-weight: bold;
+    text-decoration:none;
+}
+header a:hover{
+    color:var(--whiteTittle);
 }
 .titre{
     margin-left: 5px;
@@ -80,7 +86,7 @@ header a {
 .codewars{
     margin: 20px;
     height:max-content;
-    background: rgb(5, 5, 139);
+    background: var(--darkBlueBackground);
 }
 .accordion-body { 
     color:whitesmoke;
@@ -91,12 +97,12 @@ header a {
     background: rgb(5,5,139);
 }
 .accordion-button {
-    color:rgb(209,215,224);
+    color:var(--whiteTittle);
     background: rgb(12,12,12);
     font-size: 30px;
 }
 .accordion-button:not(.collapsed) {
-    color:rgb(209,215,224);
+    color:var(--whiteTittle);
     background: rgb(12,12,12);
   }
 .logo{

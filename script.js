@@ -2,6 +2,12 @@
 const reponse = await fetch('data.json');
 const data = await reponse.json();
 let langue="francais";
+//definition des couleurs de la page 
+document.documentElement.style.setProperty('--whiteFontPrincipal', 'rgb(170, 174, 182)');
+document.documentElement.style.setProperty('--whiteTittle', 'rgb(209,215,224)');
+document.documentElement.style.setProperty('--blackBackground', 'rgb(17,19,21)');
+document.documentElement.style.setProperty('--darkBlueBackground', 'rgb(5, 5, 139)');
+
 //fonction pour mettre la première lettre en majuscule
 function mettreMajuscule (mot){
    return mot.charAt(0).toUpperCase()+ mot.slice(1)
@@ -14,7 +20,7 @@ function creerLien(parent,info){
        lien.target="_blank"
        parent.appendChild(lien);
 }
-//fonction pour créer le bouton d
+//fonction pour créer le toggle de switch anglais/français
 function createSwitchLangue() {
    const navbar = document.querySelector('.navbar');
    const switchDiv = document.createElement('div');
@@ -241,6 +247,7 @@ function changerVersion(langue){
             }
        });
 }
+//fonction pour gerer le darkmode/ligthmode à revoir 
 function genererBoutonMode(){
        const boutonInput = document.getElementById("colorModeInput");
        const boutonLabel = document.getElementById("colorModeLabel");
@@ -263,6 +270,7 @@ function genererBoutonMode(){
 }
 
 //fonction pour generer la liste des rangs de chaque languages sur codewars
+// à travailler : simplifier l'affichage et afficher un seul score à la fois 
 async function genererCodeWars(){
    //recuperation des donnée sur codewars
    const reponse = await fetch("https://www.codewars.com/api/v1/users/Fenriz1349",{
@@ -276,10 +284,10 @@ async function genererCodeWars(){
    const dataLanguages = Object.entries(dataCodewars.ranks.languages);
    //on recupere la section contact
    const sectionCodewars = document.querySelector(".codewars");
-   const titre =document.createElement("h2");
+   const titre =document.createElement("h3");
    titre.innerText="Code Wars";
    sectionCodewars.appendChild(titre);
-   const overall =document.createElement("h3");
+   const overall =document.createElement("p");
    overall.innerText=`${dataOverall.score} points, rang : ${dataOverall.name} `;
    sectionCodewars.appendChild(overall);
    dataLanguages.sort((a, b) => {
