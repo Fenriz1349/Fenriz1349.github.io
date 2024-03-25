@@ -5,7 +5,12 @@
         "titreExperience":"Emplois",
         "poste":"Developpeur d'application IOS en formation",
         "intro":"Lillois passionné d'informatique et très curieux. \n Je suis actuellement en train de me former au dev d'application mobile iOS dans l'Apple Fondation Program Extended. \n Je me forme aussi au dev Web et Android, ainsi qu'à la gestion d'API \n Découvrez ici mes projets, mes avancées dans les langages et la programmation ainsi que mes formations et passé professionnelle. \n Je suis actuellement en recherche d'alternance ou de mentorat donc n'hésitez pas à me contacter !",
-        "formations":[
+        "formations":
+            [{"nom":"SAS Extended Apple Fondation Program",
+            "centre":"Simplon",
+            "annee":"2024",
+            "adresse":"Lille"
+            },
             {"nom":"SAS Apple Fondation Program",
             "centre":"Simplon",
             "annee":"2024",

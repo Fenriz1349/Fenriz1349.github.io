@@ -52,10 +52,10 @@ function creerMail(parent,info){
 //fonction pour generer la navbar
 function genererNavBar (langue){
    const links = [
-      { text: 'Portfolio', url: '#' },
-      { text: data[langue].titreCompetence, url: '#' },
-      { text: data[langue].titreFormation, url: '#' },
-      { text: data[langue].titreExperience, url: '#' },
+    //  { text: 'Portfolio', url: '#' },
+      { text: data[langue].titreCompetence, url: '#boutonCompetence' },
+      { text: data[langue].titreFormation, url: '#boutonFormations' },
+      { text: data[langue].titreExperience, url: '#boutonExperiences' },
       { text: 'Contacts', url: '#contacts' },
     ];
 
