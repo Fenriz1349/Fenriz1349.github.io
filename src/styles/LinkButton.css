@@ -1,0 +1,19 @@
+.linkButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--blackBackground);
+    border-radius: 15px;
+    padding: 2px;
+}
+.linkButton p {
+    font-size: 12px;
+}
+.linkButton img {
+    height: 25px;
+}
+
+.linkButton:hover{
+    background-color: var(--darkBlueBackground);
+    transform: scale(1.1);
+}

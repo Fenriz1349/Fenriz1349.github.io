@@ -1,0 +1,64 @@
+.banner{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--lightBlue);
+    margin-top: 0;
+    margin-right: 5px;
+    height: 95px;
+}
+
+.logoBanner{
+    padding-top: 0px;
+    width : 90px;
+    height : 90px;
+}
+.logoBanner:hover{
+    transform: scale(1.3);
+}
+
+.banner .logo{
+    width : 60px;
+    height : 60px;
+    margin-top: 5px;
+}
+
+.logoSocial{
+    width : 50px;
+    height : 50px;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.logoSocial:hover {
+    transform: scale(1.3);
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    margin-right: 20px;
+  }
+
+.nav-links a {
+    color: var(--blackBackground);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration:none;
+}
+.nav-links a:hover{
+    color:var(--whiteTittle);
+    font-size: 28px;
+}
+
+.social-banner{
+    display: flex;
+}
+.social-banner p {
+    margin: 0;
+}

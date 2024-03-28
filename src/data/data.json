@@ -1,0 +1,322 @@
+{
+    "francais":
+        {"titreLanguage": "Langages",
+        "titreFramework" : "Frameworks / Technologies",
+        "titreFormation": "Formations",
+        "titreExperience":"Emplois",
+        "poste":"Développeur d'application IOS en recherche d'alternance",
+        "intro": "Bonjours à toi ! <br/> Je m'appelle Julien et je suis un Lillois passionné d'informatique et très curieux. <br> Je viens de terminer 2 formations en  dev d'application mobile iOS dans l'Apple Fondation Program Extended. <br> Je me forme aussi en autodiacte au dev Web et Android, ainsi qu'à la gestion d'API. <br> Découvrez ici mes projets, mes avancées dans les langages et la programmation ainsi que mes formations et expériences professionnelles passées <br> Je suis actuellement en recherche d'alternance ou de mentorat donc n'hésitez pas à me contacter !",
+        "softskills" :[
+            {"name":"Curiosité",
+            "logo": "../assets/curiositeLogo.png",
+            "content": "J'aime comprendre le fonctionnement des choses et apprendre continuellement de nouvelles connaissances. C'est ce qui me passionne dans le développement, car il y a toujours des nouveautés à découvrir."
+            },
+            {"name":"Organisation",
+            "logo": "../assets/organisationLogo.png",
+            "content": "D'où mon appétence pour le backend. Dans ma vie perso ou dans mes anciens emplois j'ai toujours aimé quand les choses étaient bien rangées. Un gain de temps et du confort pour retrouver les bonnes informations."
+            },
+            {"name":"Autodidacte",
+            "logo": "../assets/autodidacteLogo.png",
+            "content": "Même si rien ne vaut un bon enseignant, j'aime apprendre par moi-même. Surtout avec tous les tutos et la documentation qui existent de nos jours."
+            },
+            {"name":"Diplomate",
+            "logo": "../assets/diplomateLogo.png",
+            "content": "J'ai beaucoup travaillé dans la vente, et naturellement je cherche à trouver un compromis lors d'une mésentente. Dans tous les aspects de la vie une bonne communication est primordiale."
+            }
+            ,{"name":"Polyvalent",
+            "logo": "../assets/versatileLogo.png",
+            "content": "Je sais réagir aux changements, et j'ai su m'adapter à des emplois très différents. Pour moi c'est une qualité essentielle pour un bon développeur car il faut savoir s'adapter aux besoins du client et des nouvelles technologies."
+            }
+        ],
+        "diplomas":[
+            {"name":"SAS Extended Apple Fondation Program",
+            "school":"Simplon",
+            "year":"2024",
+            "city":"Lille"
+            },
+            {"name":"SAS Apple Fondation Program",
+            "school":"Simplon",
+            "year":"2024",
+            "city":"Lille"
+                },
+            {"name":"MS Data Analyst",
+            "school":"Greta",
+            "year":"2023",
+            "city":"Lille"
+            },
+            {"name":"La Nurserie Numerique",
+            "school":"M2I/AFPA",
+            "year":"2023",
+            "city":"Lille"
+            },
+            {"name":"CAP Boucher",
+            "school":"Campus pro",
+            "year":"2014",
+            "city":"Lille"
+            },
+            {"name":"Titre Pro Transport Routier",
+            "school":"SOCOTEC Formation",
+            "year":"2011",
+            "city":"Lille"
+            },
+            {"name":"DUT STID(Statistique et Traitement Informatique des Données)",
+            "school":"Lille 2",
+            "year":"2009",
+            "city":"Roubaix"
+            },
+            {"name":"BAC Scientifique",
+            "school":"La Sagesse",
+            "year":"2005",
+            "city":"Lambersart"
+            }
+        ],
+        "Jobs":[
+            {"name":"Barman",
+            "business":"Pico Bistro",
+            "dateBegin":"septembre 2020",
+            "dateEnd":"decembre 2022"
+            },
+            {"name":"Préparateur de commandes",
+            "business":"Aldi",
+            "dateBegin":"février 2020",
+            "dateEnd":"juin 2020"
+            },
+            {"name":"Barman",
+            "business":"Chez Madelaine",
+            "dateBegin":"decembre 2019",
+            "dateEnd":""
+            },
+            {"name":"Brand Promoter",
+            "business":"Beer Factory",
+            "dateBegin":"janvier 2018",
+            "dateEnd":"decembre 2018"
+            },
+            {"name":"Boucher",
+            "business":"Carrefour Market",
+            "dateBegin":"Mai 2013",
+            "dateEnd":"decembre 2017"
+            },
+            {"name":"Apprenti Chauffeur Routier",
+            "business":"Transport Sion",
+            "dateBegin":"septembre 2011",
+            "dateEnd":"decembre 2011"
+            }
+        ],
+        "contact":[
+            {"telephone":"Telephone"},
+            {"city":"Adresse"},
+            {"mail":"e-mail"},
+            {"linkedin":"Linkedin"},
+            {"github":"Github"}
+        ]
+        }
+    ,
+    "english":
+        {"titreLanguage" : "Languages",
+        "titreFramework" : "Frameworks / Technologies",
+        "titreFormation": "Diplomas",
+        "titreExperience":"Jobs",
+        "poste":"IOS application developer looking for a work-study job",
+        "intro":"Lille-based computer enthusiast and very curious. <br> Currently, I am undergoing training in iOS mobile application development in the Apple Foundation Program Extended. <br> I am also learning web and Android development, as well as API management. <br> Explore here my projects, my progress in languages and programming, as well as my training and professional background. <br> I am currently looking for an apprenticeship or mentorship, so feel free to contact me!",
+        "softskills": [
+            {
+                "name": "Curiosity",
+                "logo": "../assets/curiositeLogo.png",
+                "content": "I enjoy understanding how things work and continuously learning new knowledge. This is what excites me about development, as there are always new discoveries to be made."
+            },
+            {
+                "name": "Organization",
+                "logo": "../assets/organisationLogo.png",
+                "content": "Hence my preference for backend. In my personal life or in my previous jobs, I have always appreciated when things were well organized. It saves time and provides comfort in finding the right information."
+            },
+            {
+                "name": "Self-taught",
+                "logo": "../assets/autodidacteLogo.png",
+                "content": "Although nothing beats a good teacher, I enjoy learning on my own. Especially with all the tutorials and documentation available nowadays."
+            },
+            {
+                "name": "Diplomatic",
+                "logo": "../assets/diplomateLogo.png",
+                "content": "I have worked extensively in sales, and naturally I seek to find a compromise in case of disagreement. In all aspects of life, good communication is essential."
+            },
+            {
+                "name": "Versatile",
+                "logo": "../assets/versatileLogo.png",
+                "content": "I can adapt to changes, and I have been able to adapt to very different jobs. For me, this is an essential quality for a good developer because you need to be able to adapt to the client's needs and new technologies."
+            }
+        ],        
+        "diplomas":[
+                {"name":"SAS Apple Fondation Program",
+                "school":"Simplon",
+                "year":"2024",
+                "city":"Lille"
+                },
+                {"name":"MS Data Analyst",
+                "school":"Greta",
+                "year":"2023",
+                "city":"Lille"
+                },
+                {"name":"The Digital Nursery",
+                "school":"M2I/AFPA",
+                "year":"2023",
+                "city":"Lille"
+                },
+                {"name":"NVQ Butcher",
+                "school":"Campus pro",
+                "year":"2014",
+                "city":""
+                },
+                {"name":"DUT STID(Statistics and Computer Data Processing)",
+                "school":"Lille 2",
+                "year":"2009",
+                "city":"Roubaix"
+                },
+                {"name":"High School Diploma Scientific",
+                "school":"La Sagesse",
+                "year":"2005",
+                "city":"Lambersart"
+                }
+            ],
+        "Jobs":[
+                {"name":"Barman",
+                "business":"Pico Bistro",
+                "dateBegin":"september 2020",
+                "dateEnd":"december 2022"
+                },
+                {"name":"Brand Promoter",
+                "business":"Beer Factory",
+                "dateBegin":"january 2018",
+                "dateEnd":"december 2018"
+                },
+                {"name":"Butcher",
+                "business":"Carrefour Market",
+                "dateBegin":"May 2013",
+                "dateEnd":"december 2017"
+                }
+            ],
+        "contact":[
+            {"telephone":"Phone"},
+            {"city":"Adress"},
+            {"mail":"mail"},
+            {"linkedin":"Linkedin"},
+            {"github":"Github"}
+        ]
+        }
+    ,
+    "languages":[
+        {"name":"Swift",
+        "logo":"../assets/swiftLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=swift&sort=",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/1696019247"
+        },
+        {"name":"Python",
+        "logo":"../assets/pythonLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=python&sort=",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/8057993737"
+        },
+        {"name":"Javascript",
+        "logo":"../assets/javascriptLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=javascript&sort=",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/2045792275"
+        },
+        {"name":"Kotlin",
+        "logo":"../assets/kotlinLogo.png",
+        "linkGithub" : "",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/9682213303"
+        },
+        {"name":"SQL",
+        "logo":"../assets/sqlLogo.png",
+        "linkGithub" : "",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/5167640348"
+        },
+        {"name":"HTML5 et CSS3",
+        "logo":"../assets/htmlLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=html&sort=",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/3207405707"
+        },
+        {"name":"TypeScript",
+        "logo":"../assets/typescriptLogo.png",
+        "linkGithub" : "",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/4288292377"
+        }
+    ],
+    "frameworks":[
+        {"name":"SwiftUI",
+        "logo":"../assets/swiftuiLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=swift&sort=",
+        "linkCertif":""
+        },
+        {"name":"React",
+        "logo":"../logo.svg",
+        "linkGithub" : "https://github.com/Fenriz1349/la-maison-jungle",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/5912403849"
+        },
+        {"name":"Numpy/ Pandas/ Matplotlib/ Seaborn",
+        "logo":"../assets/pandasLogo.png",
+        "linkGithub" : "https://github.com/Fenriz1349?tab=repositories&q=&type=&language=python&sort=",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/9923684471"
+        },
+        {"name":"Git et Github",
+        "logo":"../assets/githubLogo.png",
+        "linkGithub" : "",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/9472338171"
+        },
+       {"name":"API Rest",
+        "logo": "../assets/apiLogo.png",
+        "linkGithub" : "",
+        "linkCertif":"https://openclassrooms.com/fr/course-certificates/6358927299"
+        }
+    ],
+    "portfolio":[
+        {"name":"CV en ligne React",
+        "screenshot":"../assets/cvreactScreenshot.png",
+        "frameworks" : "React",
+        "content" :"Projet personnel de CV en ligne. Un bac à sable pour m'entrainer sur React et un moyen de me présenter.",
+        "linkGithub" : "https://github.com/Fenriz1349/cvreact"
+        },
+        {"name":"DoItYouPlan",
+        "screenshot":"../assets/doItYourPlanScreenshot1.png",
+        "frameworks" : "SwiftUI",
+        "content" :"Projet de groupe réalisé lors de mon Extended AFP en mars 2024. Une maquette d'application sur le thème de la créativité pour aider les créatifs à s'organiser.",
+        "linkGithub" : "https://github.com/Fenriz1349/DoItYourPlan"
+        },
+        {"name":"Easyconomy",
+        "screenshot":"../assets/EasyconomyScreenshot.png",
+        "frameworks" : "SwiftUI",
+        "content" :"Projet de groupe réalisé lors de mon AFP en janvier 2024. Une maquette d'application sur le thème de l'économie, pour apprendre en s'amusant.",
+        "linkGithub" : "https://github.com/Fenriz1349/EasyconomyApp"
+        },
+        {"name":"CV en ligne JS",
+        "screenshot":"../assets/cvJSScreenshot.png",
+        "frameworks" : "Javascript",
+        "content" :"La première version de mon CV, entièrement en JS.",
+        "linkGithub" : "https://github.com/Fenriz1349/CV"
+        },
+        {"name":"Calculatrice",
+        "screenshot":"../assets/calculatriceScreenshot.png",
+        "frameworks" : "Javascript",
+        "content" :"Une petite calculatrice en JS, avec saisie au pavé numerique possible.",
+        "linkGithub" : "https://github.com/Fenriz1349/calculatriceJS"
+        },
+        {"name":"Loto et Python",
+        "screenshot":"../assets/lotoScreenshot.png",
+        "frameworks" : "Python",
+        "content" :"Projet de fin de MS Data Analyst. Ma première GUI en python sur le thème du Loto.",
+        "linkGithub" : "https://github.com/Fenriz1349/Lotopython"
+        },
+        {"name":"Cardfinder",
+        "screenshot":"../assets/cardFinderScreenshot.png",
+        "frameworks" : "Javascript",
+        "content" :"Mon premier projet de groupe, une maquette de site de vente de cartes à collectioner.",
+        "linkGithub" : "https://github.com/LyRiiK59/Cardfinder"
+        }
+    ],
+    "informations":{
+        "telephone":"(33) 06 59 10 21 66",
+        "city":"Lille, France",
+        "mail":"julien.cotte@live.fr",
+        "linkedin":"https://www.linkedin.com/in/julien-cotte-7a6141292/",
+        "github":"https://github.com/Fenriz1349",
+        "codewars":"https://www.codewars.com/users/Fenriz1349"
+        }
+}

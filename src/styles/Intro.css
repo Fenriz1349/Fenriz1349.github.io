@@ -1,0 +1,12 @@
+.intro p{
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+.intro-content{
+    display: flex;
+}
+
+.intro-content img {
+    height: 200px;
+}

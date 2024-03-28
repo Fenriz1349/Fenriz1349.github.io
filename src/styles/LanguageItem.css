@@ -1,0 +1,36 @@
+.language-item{
+    background-color: var(--ligthBlackBackground);
+    width: 250px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 200px;
+    height: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;    
+}
+.language-item h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.language-item a {
+    font-size: 16px;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .html {
+    display: flex;
+    margin-bottom: 0;
+  }

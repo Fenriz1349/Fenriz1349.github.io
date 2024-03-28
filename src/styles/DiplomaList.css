@@ -1,0 +1,5 @@
+.diploma-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}

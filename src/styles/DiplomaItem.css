@@ -1,0 +1,24 @@
+.diploma-item{
+    background-color: var(--ligthBlackBackground);
+    width: 250px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 50px;   
+}
+.diploma-item h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+    min-height: 2em; 
+}
+.diploma-item p {
+    font-size: 18px;
+}
+
+.diploma-top {
+    display: flex;
+}
